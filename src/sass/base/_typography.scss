@@ -1,0 +1,47 @@
+//typography
+:root {
+  --font-size-1: 1.2rem !important;
+  --font-heading2-small: 2.3rem !important;
+  --font-heading3-small: 1.3rem !important;
+  --font-size-2: 2.5rem !important;
+  --font-size-3: 5.5rem !important;
+  --font-size-4: 6rem !important;
+  --font-size-5: 6.6rem !important;
+}
+
+.notion-heading {
+  padding: 0px 2px !important;
+  margin: 0px !important;
+}
+
+h1.notion-heading {
+  font-size: var(--font-size-5) !important;
+}
+
+h2.notion-heading {
+  font-size: var(--font-size-3) !important;
+  line-height: 100% important;
+  font-weight: 500 !important;
+}
+
+h3.notion-heading {
+  font-size: var(--font-size-2) !important;
+}
+
+p,
+p.notion-text__content {
+  font-size: var(--font-size-1) !important;
+}
+
+.notion-heading .notion-semantic-string {
+  line-height: 0px !important;
+}
+
+@media screen and (max-width: 1288px) {
+  h2.notion-heading {
+    font-size: var(--font-heading2-small) !important;
+  }
+  h3.notion-heading {
+    font-size: var(--font-heading3-small) !important;
+  }
+}
