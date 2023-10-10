@@ -280,49 +280,6 @@ p.notion-text__content {
 }
 
 @media (max-width: 546px) {
-  .notion-collection.inline {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .notion-collection-gallery {
-    column-count: 1 !important;
-  }
-  .notion-dropdown__button {
-    display: none !important;
-  }
-  .notion-dropdown__menu.initial-state {
-    z-index: 2 !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-  .notion-dropdown__menu {
-    background: none !important;
-    box-shadow: unset !important;
-    left: auto !important;
-    top: auto !important;
-    position: relative !important;
-    transform: none !important;
-  }
-  .notion-dropdown__menu-header {
-    display: none !important;
-  }
-  .notion-dropdown__option {
-    border: 1px blue solid !important;
-    border-radius: 50px !important;
-    transition: var(--transition) !important;
-    margin: 10px 5px !important;
-  }
-  .notion-dropdown__option:hover {
-    background-color: blue !important;
-  }
-  .notion-dropdown__menu.animate-out {
-    animation: none !important;
-  }
-  .notion-dropdown__option-list {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    padding: 20px 0 0 0 !important;
-  }
   .notion-collection__header-wrapper {
     align-items: center;
     position: relative !important;
