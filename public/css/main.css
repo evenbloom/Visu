@@ -6,6 +6,12 @@
   --callout-bg-gray: rgb(92, 88, 76) !important;
 }
 
+.theme-dark body {
+  --color-mask-default: linear-gradient(
+  rgb(253, 251, 245),
+  rgba(253, 251, 245, 0)) !important;
+}
+
 :root {
   --font-size-1: 1.2rem !important;
   --font-heading2-small: 2.3rem !important;
