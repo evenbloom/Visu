@@ -407,6 +407,10 @@
   .notion-collection-gallery {
     column-count: 2 !important;
   }
+
+  .notion-collection-gallery.medium {
+    width: 100% !important;
+  }
   
   .notion-collection-gallery.small{
   display: grid !important;

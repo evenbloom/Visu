@@ -444,6 +444,9 @@ p.notion-text__content {
   .notion-collection-gallery {
     column-count: 2 !important;
   }
+  .notion-collection-gallery.medium {
+    width: 100% !important;
+  }
   .notion-collection-gallery.small {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
