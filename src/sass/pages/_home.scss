@@ -222,6 +222,15 @@
   height: 8rem !important;
 }
 
+//page-icon
+.notion-page__icon {
+  display: none !important;
+}
+
+.notion-page > div:hover {
+  padding: 5px 10px;
+}
+
 //media quieries
 
 @media (max-width: 546px) {

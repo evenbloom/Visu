@@ -279,6 +279,14 @@ p.notion-text__content {
   height: 8rem !important;
 }
 
+.notion-page__icon {
+  display: none !important;
+}
+
+.notion-page > div:hover {
+  padding: 5px 10px;
+}
+
 @media (max-width: 546px) {
   .notion-collection__header-wrapper {
     align-items: center;
