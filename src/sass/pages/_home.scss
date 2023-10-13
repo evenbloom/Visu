@@ -50,6 +50,11 @@
   height: 100% !important;
 }
 
+//super-content
+.super-content-wrapper{
+  overflow: hidden !important;
+}
+
 .notion-collection-card__cover {
   height: 100% !important;
   Picture {
@@ -128,11 +133,13 @@
 }
 
 .notion-collection.inline {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex !important;
+  grid-template-columns: none !important;
+  justify-content: space-between !important;
 }
 .notion-collection-gallery.medium {
   grid-template-columns: 1fr 1fr;
+  width: 80% !important;
 }
 
 .notion-collection-gallery {
@@ -145,19 +152,30 @@
 .notion-collection-card {
   box-shadow: none !important;
   background: transparent !important;
-
   margin-bottom: 35px !important;
   height: 100% !important;
   display: inline-block !important;
   overflow: unset !important;
   break-inside: avoid !important;
   transition: opacity 0.2s ease-in-out !important;
+  height: auto !important;
+  overflow: hidden !important;
 }
 
 .notion-collection-card__cover {
   height: auto !important;
   max-height: none !important;
   min-height: auto !important;
+}
+
+.notion-collection-card__cover img {
+    transition: transform .2s ease-in-out!important;
+}
+
+.notion-collection-card:hover .notion-collection-card__cover img{
+    transform: scale(1.08) rotate(0.01deg) !important;
+    -webkit-transition: all 0.4s !important;
+    transition: all 0.4s !important;
 }
 
 .notion-collection-card__content .notion-property__select {
@@ -186,7 +204,62 @@
   padding: 0.2rem 0.5rem !important;
 }
 
-//callout-gray
+//Gallery-Small
+.notion-collection-gallery.small{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  width: 100% !important;
+}
+.notion-collection-gallery.small .notion-collection-card__cover {
+  width: 100% !important;
+  height: 350px !important;
+  max-height: 100% !important;
+}
+
+//toggle
+.notion-toggle {
+  border: 1px solid #cfcbc6 !important;
+  border-radius: 5px !important;
+  text-align: left !important;
+  position: relative !important;
+  transition: 0.3s ease-in-out !important;
+  margin-bottom: 1rem !important;
+}
+.notion-toggle__summary {
+  margin-left: 20px !important;
+  align-items: center !important;
+  font-size: 1rem !important;
+  padding: 25px 70px 25px 0px !important;
+}
+
+.notion-toggle__summary .notion-semantic-string span {
+  font-size: var(--font-size-1) !important;
+}
+
+.notion-toggle__trigger {
+  margin-right: 25px !important;
+}
+
+.notion-toggle__trigger_icon {
+  font-size: 3rem !important;
+  border: 1px solid #cfcbc6;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.notion-toggle__trigger .notion-toggle__trigger_icon > span{
+  padding-bottom: 5px !important;
+  color: #cfcbc6 !important;
+}
+
+.notion-toggle__content {
+  opacity: 0.7 !important;
+  padding: 0px 30px 20px 30px !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+
+//callout
 .notion-callout {
   overflow: visible !important;
   width: 100vw !important;
@@ -194,6 +267,11 @@
   left: 50% !important;
   position: relative !important;
   border-radius: 0 !important;
+}
+
+.notion-callout__icon .notion-icon {
+  font-size: 8rem !important;
+  line-height: 6.8rem !important;
 }
 
 .notion-callout__content {
@@ -232,6 +310,12 @@
 //media quieries
 
 @media (max-width: 546px) {
+
+  .notion-collection.inline {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
   .notion-collection__header-wrapper {
     align-items: center;
     position: relative !important;
@@ -254,12 +338,115 @@
   .notion-callout__content .notion-column-list {
     flex-wrap: wrap !important;
   }
-  .notion-callout.bg-gray-light {
+  .notion-callout {
     padding: 2rem 1.5rem !important;
+  }
+
+  .notion-collection-gallery {
+    column-count: 1 !important;
+  }
+  
+  .notion-collection-gallery.small{
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  }
+  
+  .notion-dropdown__menu-header {
+    display: none !important;
+  }
+
+  .notion-dropdown__option {
+    border: 1px #cfcbc6 solid !important;
+    border-radius: 50px !important;
+    transition: var(--transition) !important;
+    margin: 10px 5px !important;
+  }
+  
+  .notion-dropdown__option.active{
+    background-color: #ebe9e6 !important;
+  }
+  
+  .notion-dropdown__option.active p{
+    border-bottom: none !important;
+  }
+
+  .notion-dropdown__option:hover {
+    background-color: #ebe9e6 !important;
+  }
+
+  .notion-dropdown__menu.animate-out {
+    animation: none !important;
+  }
+  .notion-dropdown__option-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 20px 0 0 0 !important;
+  }
+  
+  .notion-dropdown__menu.animate-out {
+    user-select: inherit !important;
+    pointer-events: inherit !important;
+  }
+  .notion-dropdown__menu.initial-state{
+    user-select: inherit !important;
+    pointer-events: inherit !important;
+  }
+  
+  .notion-callout__icon .notion-icon {
+  font-size: 4rem !important;
+  line-height: 8rem !important;
+}
+}
+
+@media screen and (max-width: 1080px){
+  .notion-collection.inline {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .notion-collection-gallery {
+    column-count: 2 !important;
+  }
+  
+  .notion-collection-gallery.small{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  }
+  
+  .notion-dropdown__menu-header {
+    display: none !important;
+  }
+
+  .notion-dropdown__option {
+    border: 1px #cfcbc6 solid !important;
+    border-radius: 50px !important;
+    transition: var(--transition) !important;
+    margin: 10px 5px !important;
+  }
+  
+  .notion-dropdown__option.active{
+    background-color: #ebe9e6 !important;
+  }
+  
+  .notion-dropdown__option.active p{
+    border: none !important;
+  }
+
+  .notion-dropdown__option:hover {
+    background-color: #ebe9e6 !important;
+  }
+
+  .notion-dropdown__menu.animate-out {
+    animation: none !important;
+  }
+  .notion-dropdown__option-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 20px 0 0 0 !important;
   }
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1300px) {
   .notion-collection-gallery {
     column-count: 2 !important;
   }
