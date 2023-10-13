@@ -187,15 +187,13 @@
 }
 
 //callout-gray
-.notion-callout.bg-gray-light {
+.notion-callout {
   overflow: visible !important;
   width: 100vw !important;
   margin-left: -50vw !important;
   left: 50% !important;
   position: relative !important;
   border-radius: 0 !important;
-  color: #e5e5e3 !important;
-  background-color: var(--callout-bg-gray) !important;
 }
 
 .notion-callout__content {
