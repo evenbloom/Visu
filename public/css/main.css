@@ -283,7 +283,7 @@ p.notion-text__content {
   display: none !important;
 }
 
-.notion-page > div:hover {
+.notion-page > div {
   padding: 5px 10px;
 }
 
