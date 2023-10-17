@@ -108,6 +108,11 @@ p.notion-text__content {
   height: 100% !important;
 }
 
+.notion-property__text {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+
 .super-content-wrapper {
   overflow: hidden !important;
 }
@@ -271,6 +276,56 @@ p.notion-text__content {
   width: 100% !important;
   height: 350px !important;
   max-height: 100% !important;
+}
+
+.notion-collection-gallery.large {
+  column-count: 1 !important;
+  width: 100% !important;
+}
+
+.gallery .notion-collection-card__property .notion-semantic-string {
+  max-width: 450px !important;
+  white-space: wrap !important;
+}
+
+.notion-collection-gallery.large > .notion-collection-card.gallery {
+  display: flex !important;
+  gap: 3rem !important;
+  align-items: flex-end !important;
+  position: relative !important;
+  justify-content: space-between !important;
+  border: none !important;
+  border-bottom: 1px solid lightgrey !important;
+}
+
+.notion-collection-card__cover.large {
+  max-height: 25.5rem !important;
+  height: 25.5rem !important;
+  width: 45rem !important;
+  overflow: hidden !important;
+}
+
+.notion-collection-gallery.large .notion-collection-card__content .notion-property__select {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.notion-collection-card.gallery {
+  flex-direction: row-reverse !important;
+}
+
+.notion-collection-gallery.large .pill-default {
+  background: lightgrey !important;
+  color: black !important;
+}
+
+.notion-collection-gallery.large .notion-collection-card .notion-property__title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.notion-collection-gallery.large .notion-property__title .notion-semantic-string {
+  line-height: 1 !important;
 }
 
 .notion-toggle {
@@ -476,6 +531,13 @@ p.notion-text__content {
     display: flex !important;
     flex-wrap: wrap !important;
     padding: 20px 0 0 0 !important;
+  }
+  .notion-collection-gallery.large > .notion-collection-card.gallery {
+    display: block !important;
+    gap: 3rem !important;
+  }
+  .notion-collection-gallery.large .notion-property__title .notion-semantic-string {
+    line-height: 1 !important;
   }
 }
 @media screen and (max-width: 1300px) {
