@@ -369,7 +369,8 @@ p.notion-text__content {
 
 .notion-collection-list__item-property .notion-property__select .notion-pill {
   border-radius: 50rem !important;
-  padding: 5px 10px;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
 }
 
 .notion-collection-list.no-border-top {
