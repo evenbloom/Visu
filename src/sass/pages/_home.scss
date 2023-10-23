@@ -240,7 +240,7 @@
   position: relative !important;
   justify-content: space-between !important;
   border: none !important;
-  border-bottom: 1px solid lightgrey !important;
+  border-bottom: 1px solid var(--color-border-default) !important;
 }
 
 .notion-collection-card__cover.large {
