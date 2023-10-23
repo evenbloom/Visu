@@ -199,7 +199,7 @@ p.notion-text__content {
 
 .notion-collection-gallery.medium {
   grid-template-columns: 1fr 1fr;
-  width: 80% !important;
+  width: 100% !important;
 }
 
 .notion-collection-gallery {
