@@ -370,7 +370,7 @@
 
 //media quieries
 
-@media (max-width: 546px) {
+@media screen and (max-width: 546px) {
   .notion-collection.inline {
     display: flex !important;
     flex-direction: column !important;

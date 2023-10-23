@@ -59,8 +59,6 @@ p.notion-text__content {
   }
 }
 .super-navbar {
-  padding-left: calc(env(safe-area-inset-left) + 96px) !important;
-  padding-right: calc(env(safe-area-inset-left) + 96px) !important;
   margin: 0 auto !important;
 }
 
@@ -417,7 +415,7 @@ p.notion-text__content {
   padding: 5px 10px;
 }
 
-@media (max-width: 546px) {
+@media screen and (max-width: 546px) {
   .notion-collection.inline {
     display: flex !important;
     flex-direction: column !important;
