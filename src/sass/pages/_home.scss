@@ -467,6 +467,10 @@ p.notion-text__content {
     grid-template-columns: 1fr !important;
   }
 
+  .notion-collection-gallery.medium {
+    column-count: 1 !important;
+  }
+
   .notion-dropdown__menu-header {
     display: none !important;
   }
@@ -526,6 +530,7 @@ p.notion-text__content {
 
   .notion-collection-gallery.medium {
     width: 100% !important;
+    column-count: 2 !important;
   }
 
   .notion-collection-gallery.small {
