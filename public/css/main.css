@@ -250,7 +250,6 @@ p.notion-text__content {
 .notion-collection-gallery .notion-pill {
   -webkit-backdrop-filter: blur(1rem) !important;
   backdrop-filter: blur(1rem) !important;
-  color: #fff !important;
   text-transform: uppercase !important;
   font-size: 10px !important;
   position: relative !important;
