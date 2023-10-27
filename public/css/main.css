@@ -494,6 +494,7 @@ p.notion-text__content {
   .notion-collection-gallery.small {
     display: grid !important;
     grid-template-columns: 1fr !important;
+    column-count: 1 !important;
   }
   .notion-collection-gallery.medium {
     column-count: 1 !important;
@@ -508,13 +509,13 @@ p.notion-text__content {
     margin: 10px 5px !important;
   }
   .notion-dropdown__option.active {
-    background-color: #ebe9e6 !important;
+    background-color: var(--color-ui-hover-bg) !important;
   }
   .notion-dropdown__option.active p {
     border-bottom: none !important;
   }
   .notion-dropdown__option:hover {
-    background-color: #ebe9e6 !important;
+    background-color: var(--color-ui-hover-bg) !important;
   }
   .notion-dropdown__menu.animate-out {
     animation: none !important;
