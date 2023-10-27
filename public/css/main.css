@@ -1,9 +1,8 @@
 .theme-light body {
-  --color-bg-default:rgb(253, 251, 245) !important;
+  /* --color-bg-default:rgb(253, 251, 245) !important;*/
   --color-mask-default: linear-gradient(
   rgb(253, 251, 245),
   rgba(253, 251, 245, 0)) !important;
-  --callout-bg-gray: rgb(92, 88, 76) !important;
 }
 
 .theme-dark body {
