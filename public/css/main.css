@@ -573,13 +573,13 @@ p.notion-text__content {
     margin: 10px 5px !important;
   }
   .notion-dropdown__option.active {
-    background-color: #ebe9e6 !important;
+    /*background-color: #ebe9e6 !important;*/
   }
   .notion-dropdown__option.active p {
     border: none !important;
   }
   .notion-dropdown__option:hover {
-    background-color: #ebe9e6 !important;
+    /*background-color: #ebe9e6 !important;*/
   }
   .notion-dropdown__menu.animate-out {
     animation: none !important;
