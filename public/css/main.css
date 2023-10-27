@@ -247,12 +247,10 @@ p.notion-text__content {
   padding: 0.5rem !important;
 }
 
-.notion-collection-gallery .pill-default {
+.notion-collection-gallery .notion-pill {
   -webkit-backdrop-filter: blur(1rem) !important;
   backdrop-filter: blur(1rem) !important;
   color: #fff !important;
-  background-color: rgba(253, 251, 245, 0.05) !important;
-  border-color: rgba(253, 251, 245, 0.15) !important;
   text-transform: uppercase !important;
   font-size: 10px !important;
   position: relative !important;
@@ -315,11 +313,6 @@ p.notion-text__content {
 
 .notion-collection-card.gallery {
   flex-direction: row-reverse !important;
-}
-
-.notion-collection-gallery.large .pill-default {
-  background: lightgrey !important;
-  color: black !important;
 }
 
 .notion-collection-gallery.large .notion-collection-card .notion-property__title {
