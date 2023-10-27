@@ -285,7 +285,7 @@
 }
 .notion-toggle__summary {
   margin-left: 20px !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   font-size: 1rem !important;
   padding: 25px 70px 25px 0px !important;
 }
@@ -515,6 +515,13 @@ p.notion-text__content {
 }
 
 @media screen and (max-width: 1080px) {
+  p,
+  p.notion-text__content {
+    font-size: 1rem !important;
+  }
+  .notion-toggle__summary .notion-semantic-string span {
+    font-size: 1rem !important;
+  }
   .notion-collection.inline {
     display: flex !important;
     flex-direction: column !important;
