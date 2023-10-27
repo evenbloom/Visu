@@ -49,6 +49,10 @@ p.notion-text__content {
   line-height: 0px !important;
 }
 
+.notion-semantic-string {
+  word-break: normal !important;
+}
+
 @media screen and (max-width: 1288px) {
   h2.notion-heading {
     font-size: var(--font-heading2-small) !important;
