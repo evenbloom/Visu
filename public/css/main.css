@@ -256,7 +256,6 @@ p.notion-text__content {
   font-weight: 400 !important;
   letter-spacing: 1.5px;
   white-space: nowrap !important;
-  border: 1px solid #b1b0ac !important;
   border-radius: 4px !important;
   padding: 0.2rem 0.5rem !important;
 }
