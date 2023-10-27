@@ -552,7 +552,7 @@ p.notion-text__content {
   }
 
   .notion-dropdown__option.active {
-    /*background-color: #ebe9e6 !important;*/
+    background-color: var(--color-ui-hover-bg) !important;
   }
 
   .notion-dropdown__option.active p {
@@ -560,7 +560,7 @@ p.notion-text__content {
   }
 
   .notion-dropdown__option:hover {
-    /*background-color: #ebe9e6 !important;*/
+    background-color: var(--color-ui-hover-bg) !important;
   }
 
   .notion-dropdown__menu.animate-out {
