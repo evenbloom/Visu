@@ -231,6 +231,10 @@ p.notion-text__content {
   min-height: auto !important;
 }
 
+.notion-collection-card__cover > * {
+  position: relative !important;
+}
+
 .notion-collection-card__cover img {
   transition: transform 0.2s ease-in-out !important;
 }
