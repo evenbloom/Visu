@@ -464,6 +464,70 @@ p.notion-text__content {
   padding: 5px 10px !important;
 }
 
+@media (max-width: 1080px) {
+  p,
+  p.notion-text__content {
+    font-size: 1rem !important;
+  }
+  .notion-toggle__summary .notion-semantic-string span {
+    font-size: 1rem !important;
+  }
+  .notion-collection.inline {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .notion-collection-gallery.medium {
+    column-count: 2 !important;
+    width: 100% !important;
+  }
+  .notion-collection-gallery.small {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  h1.notion-heading {
+    font-size: var(--font-size-3) !important;
+    line-height: 1 !important;
+  }
+  .notion-collection-gallery.large > .notion-collection-card.gallery {
+    flex-direction: column !important;
+  }
+  .notion-dropdown__menu-header {
+    display: none !important;
+  }
+  .notion-dropdown__option {
+    border: 1px #cfcbc6 solid !important;
+    border-radius: 50px !important;
+    transition: var(--transition) !important;
+    margin: 10px 5px !important;
+  }
+  .notion-dropdown__option.active {
+    background-color: var(--color-ui-hover-bg) !important;
+  }
+  .notion-dropdown__option.active p {
+    border: none !important;
+  }
+  .notion-dropdown__option:hover {
+    background-color: var(--color-ui-hover-bg) !important;
+  }
+  .notion-dropdown__menu.animate-out {
+    animation: none !important;
+  }
+  .notion-dropdown__option-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 20px 0 0 0 !important;
+  }
+  .notion-collection-gallery.large > .notion-collection-card.gallery {
+    display: block !important;
+    gap: 3rem !important;
+  }
+  .notion-collection-gallery.large .notion-property__title .notion-semantic-string {
+    line-height: 1 !important;
+  }
+  .notion-collection-gallery.large .notion-collection-card__content {
+    width: 100% !important;
+  }
+}
 @media (max-width: 546px) {
   .notion-collection.inline {
     display: flex !important;
@@ -549,70 +613,6 @@ p.notion-text__content {
   }
   .notion-collection-list__item {
     flex-direction: row !important;
-  }
-}
-@media (max-width: 1080px) {
-  p,
-  p.notion-text__content {
-    font-size: 1rem !important;
-  }
-  .notion-toggle__summary .notion-semantic-string span {
-    font-size: 1rem !important;
-  }
-  .notion-collection.inline {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .notion-collection-gallery.medium {
-    column-count: 2 !important;
-    width: 100% !important;
-  }
-  .notion-collection-gallery.small {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-  }
-  h1.notion-heading {
-    font-size: var(--font-size-3) !important;
-    line-height: 1 !important;
-  }
-  .notion-collection-gallery.large > .notion-collection-card.gallery {
-    flex-direction: column !important;
-  }
-  .notion-dropdown__menu-header {
-    display: none !important;
-  }
-  .notion-dropdown__option {
-    border: 1px #cfcbc6 solid !important;
-    border-radius: 50px !important;
-    transition: var(--transition) !important;
-    margin: 10px 5px !important;
-  }
-  .notion-dropdown__option.active {
-    background-color: var(--color-ui-hover-bg) !important;
-  }
-  .notion-dropdown__option.active p {
-    border: none !important;
-  }
-  .notion-dropdown__option:hover {
-    background-color: var(--color-ui-hover-bg) !important;
-  }
-  .notion-dropdown__menu.animate-out {
-    animation: none !important;
-  }
-  .notion-dropdown__option-list {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    padding: 20px 0 0 0 !important;
-  }
-  .notion-collection-gallery.large > .notion-collection-card.gallery {
-    display: block !important;
-    gap: 3rem !important;
-  }
-  .notion-collection-gallery.large .notion-property__title .notion-semantic-string {
-    line-height: 1 !important;
-  }
-  .notion-collection-gallery.large .notion-collection-card__content {
-    width: 100% !important;
   }
 }
 @media screen and (min-width: 1080px) {
