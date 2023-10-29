@@ -464,7 +464,7 @@ p.notion-text__content {
   padding: 5px 10px !important;
 }
 
-@media screen and (max-width: 546px) {
+@media only screen and (max-width: 546px) {
   .notion-collection.inline {
     display: flex !important;
     flex-direction: column !important;
