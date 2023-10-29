@@ -181,6 +181,10 @@
   transition: transform 0.2s ease-in-out !important;
 }
 
+.notion-collection-card__cover.medium img {
+  position: relative !important;
+}
+
 .notion-collection-card:hover .notion-collection-card__cover img {
   transform: scale(1.08) rotate(0.01deg) !important;
   -webkit-transition: all 0.4s !important;
