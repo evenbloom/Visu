@@ -464,6 +464,14 @@ p.notion-text__content {
   padding: 5px 10px !important;
 }
 
+::selection {
+  background: var(--color-yellow); /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: var(--color-yellow); /* Gecko Browsers */
+}
+
 @media (max-width: 1080px) {
   p,
   p.notion-text__content {
