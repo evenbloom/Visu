@@ -342,6 +342,10 @@ p.notion-text__content {
   margin-bottom: 1rem !important;
 }
 
+.notion-toggle.bg-red {
+  display: none !important;
+}
+
 .notion-toggle__summary {
   margin-left: 20px !important;
   align-items: flex-start !important;
