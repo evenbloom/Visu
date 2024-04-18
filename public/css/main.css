@@ -362,6 +362,11 @@ p.notion-text__content {
   margin-bottom: 1.5rem !important;
 }
 
+/*3.1*/
+.notion-collection-card .notion-property__title {
+  line-height: 2.8rem !important;
+}
+
 .notion-collection-gallery.large .notion-property__title .notion-semantic-string {
   line-height: 1 !important;
 }
