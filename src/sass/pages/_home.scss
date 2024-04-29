@@ -210,9 +210,10 @@
 
 /*3.1*/
 .notion-collection-card:hover img {
-  transform: scale(1.08) rotate(0.01deg) !important;
-  -webkit-transition: all 0.4s !important;
-  transition: all 0.4s !important;
+  opacity: 0.8 !important;
+  transition: opacity 0.25s ease-in-out !important;
+  -moz-transition: opacity 0.25s ease-in-out !important;
+  -webkit-transition: opacity 0.25s ease-in-out !important;
 }
 
 .notion-collection-card picture {
