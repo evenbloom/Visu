@@ -583,6 +583,10 @@ p.notion-text__content {
 
 //media quieries - 546
 @media (max-width: 546px) {
+  .super-navbar {
+    padding: 0 var(--padding-left-mobile) 0 var(--padding-right-mobile) !important;
+  }
+
   .notion-collection.inline {
     display: flex !important;
     flex-direction: column !important;
