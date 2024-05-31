@@ -685,6 +685,10 @@ p.notion-text__content {
     pointer-events: inherit !important;
   }
 
+  .notion-callout__icon {
+    left: 10px !important;
+  }
+
   .notion-callout__icon .notion-icon {
     font-size: 5rem !important;
     line-height: 8rem !important;
