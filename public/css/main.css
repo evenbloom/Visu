@@ -480,6 +480,7 @@ p.notion-text__content {
 
 .notion-callout {
   overflow: visible !important;
+  margin-top: 60px !important;
   width: 100vw !important;
   margin-left: -50vw !important;
   left: 50% !important;
@@ -488,7 +489,7 @@ p.notion-text__content {
 }
 
 .notion-callout__icon .notion-icon {
-  font-size: 8rem !important;
+  font-size: 5rem !important;
   line-height: 6.8rem !important;
 }
 
@@ -510,6 +511,7 @@ p.notion-text__content {
 .notion-callout__icon {
   position: absolute !important;
   top: -70px !important;
+  left: 96px !important;
 }
 
 .notion-callout__icon img {
@@ -690,7 +692,7 @@ p.notion-text__content {
     pointer-events: inherit !important;
   }
   .notion-callout__icon .notion-icon {
-    font-size: 4rem !important;
+    font-size: 5rem !important;
     line-height: 8rem !important;
   }
   .notion-collection-list__item {
